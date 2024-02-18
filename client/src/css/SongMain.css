@@ -1,0 +1,6 @@
+.songmain{
+    max-height: calc(87dvh);
+    overflow: hidden;
+    overflow-y: scroll;
+    border-radius: 5px;
+}

@@ -1,0 +1,237 @@
+.card{
+    background-color: #181818;
+    border-radius: 8px;
+    width: 150px;
+    padding: 16px;
+    transition: background-color .3s ease;
+    isolation: isolate;
+    position: relative;
+}
+.card:hover{
+    background-color: #282828;
+}
+.card:hover .hover-translate{
+    transition: .3s transform ease-in-out;
+    visibility: visible;
+    transform: translateY(-45%);
+}
+.card-image,.card-skeleton-image{
+    height: 150px;
+    width: 150px;
+    box-shadow: 0 8px 24px rgba(0,0,0,.5);
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.card-title{
+    font-size: 14px;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.skeleton-card-title{
+    height: 20px;
+    width: 80px;
+    border-radius: 25px;
+}
+.card-content{
+    height: 62px;
+    width: 150px;
+    gap: 3px;
+}
+.card-text{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    color: #a7a7a7;
+    font-size: 12px;
+    font-weight: 400;
+}
+.card-skeleton-content{
+    gap: 10px;
+}
+.skeleton-card-text{
+    height: 0.3rem;
+    border-radius: 25px;
+}
+.skeleton-card-text:last-child{
+    width: 80%;
+}
+.card-break{
+    gap: 5px;
+}
+.skeleton{
+    display: inline-block;
+    line-height: 100%;
+    background-color: #ffff;
+    background-size: 1000px 1000px;
+    background-image: linear-gradient(
+    100deg,
+    #4f4a4c 20%,
+    #484545 50%,
+    #504d4d 60%
+  );
+  animation: skeleton-loading 3s linear infinite forwards;
+}
+.card-play-button{
+    position: absolute;
+    display: flex;
+    bottom: 20%;
+    right: 3%;
+    padding: 10px;
+    visibility: hidden;
+}
+
+
+
+@keyframes skeleton-loading{
+    0%{
+        background-position: -500px 0;
+    }
+    100%{
+        background-position: 500px 0;
+    }
+}
+@media(max-width: 1468px){
+    .card-image,.card-skeleton-image{
+        transition: .3s ease-in-out;
+        height: 140px;
+        width: 140px;
+    }
+    .card,.card-content{
+        transition: .3s ease-in-out;
+        width: 140px;
+    }
+}
+@media(max-width: 1368px){
+    .card-image,.card-skeleton-image{
+        transition: .3s ease-in-out;
+        height: 150px;
+        width: 150px;
+    }
+    .card,.card-content{
+        transition: .3s ease-in-out;
+        width: 150px;
+    }
+}
+
+@media(max-width: 1248px){
+    .card-image,.card-skeleton-image{
+        transition: .3s ease-in-out;
+        height: 140px;
+        width: 140px;
+    }
+    .card,.card-content{
+        transition: .3s ease-in-out;
+        width: 140px;
+    }
+}
+@media(max-width: 1200px){
+    .card-image,.card-skeleton-image{
+        transition: .3s ease-in-out;
+        height: 150px;
+        width: 150px;
+    }
+    .card,.card-content{
+        transition: .3s ease-in-out;
+        width: 150px;
+    }
+}
+
+@media(max-width: 1064px){
+    .card-image,.card-skeleton-image{
+        transition: .3s ease-in-out;
+        height: 140px;
+        width: 140px;
+    }
+    .card,.card-content{
+        transition: .3s ease-in-out;
+        width: 140px;
+    }
+}
+@media(max-width: 998px){
+    .card-image,.card-skeleton-image{
+        transition: .3s ease-in-out;
+        height: 150px;
+        width: 150px;
+    }
+    .card,.card-content{
+        transition: .3s ease-in-out;
+        width: 150px;
+    }
+}
+@media(max-width: 877px){
+    .card-image,.card-skeleton-image{
+        transition: .3s ease-in-out;
+        height: 125px;
+        width: 125px;
+    }
+    .card,.card-content{
+        transition: .3s ease-in-out;
+        width: 125px;
+    }
+}
+
+@media(max-width: 792px){
+    .card-image,.card-skeleton-image{
+        transition: .3s ease-in-out;
+        height: 140px;
+        width: 140px;
+    }
+    .card,.card-content{
+        transition: .3s ease-in-out;
+        width: 140px;
+    }
+}
+@media(max-width: 648px){
+    .card-image,.card-skeleton-image{
+        transition: .3s ease-in-out;
+        height: 110px;
+        width: 110px;
+    }
+    .card,.card-content{
+        transition: .3s ease-in-out;
+        width: 110px;
+    }
+}
+
+@media(max-width: 555px){
+    .card-image,.card-skeleton-image{
+        transition: .3s ease-in-out;
+        height: 140px;
+        width: 140px;
+    }
+    .card,.card-content{
+        transition: .3s ease-in-out;
+        width: 140px;
+    }
+}
+@media(max-width: 474px){
+    .card-image,.card-skeleton-image{
+        transition: .3s ease-in-out;
+        height: 125px;
+        width: 125px;
+    }
+    .card,.card-content{
+        transition: .3s ease-in-out;
+        width: 125px;
+    }
+}
+@media(max-width: 434px){
+    .card-image,.card-skeleton-image{
+        transition: .3s ease-in-out;
+        height: 110px;
+        width: 110px;
+    }
+    .card,.card-content{
+        transition: .3s ease-in-out;
+        width: 110px;
+    }
+}
+

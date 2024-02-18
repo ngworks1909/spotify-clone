@@ -1,0 +1,51 @@
+.field-form{
+    width: 450px;
+    margin: 0 auto;
+    position: relative;
+}
+.label-name{
+    font-size: 14px;
+    font-weight: 600;
+}
+.input-field{
+    height: 45px;
+    padding: 0 15px;
+    border: 1px solid rgba(0, 0, 0, 0.451);
+    border-radius: 5px;
+    font-size: 14px;
+    word-spacing: 1px;
+}
+.error{
+    width: 450px;
+}
+.error-icon{
+    height: 20px;
+    width: 20px;
+}
+.error-text{
+    font-size: 15px;
+    font-weight: 600;
+    color: #d31225;
+}
+.input-error{
+    border-color: #d31225;
+    outline-color: #d31225;
+    outline-width: 2px;
+}
+.d-none{
+    transition: .2s ease-in-out;
+    display: none;
+}
+
+@media(max-width: 498px){
+    .field-form,.error{
+        width: 350px;
+    }
+    .error-text{
+        font-size: 12px;
+    }
+    .error-icon{
+        height: 15px;
+        width: 15px;
+    }
+}

@@ -1,0 +1,6 @@
+.song-container{
+    overflow: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    
+}

@@ -1,0 +1,18 @@
+.play{
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+}
+.play-icon{
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.play-song-icon{
+    left: 55%;
+}

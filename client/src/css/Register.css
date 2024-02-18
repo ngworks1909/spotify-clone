@@ -1,0 +1,44 @@
+.register{
+    padding: 20px 0;
+}
+.reg-logo{
+    height: 50px;
+    width: 170px;
+}
+.reg-text{
+    padding-top: 15px;
+}
+.sign-text{
+    font-size: 32.3px;
+    font-weight: 500;
+    letter-spacing: -0.04em;
+    word-spacing: 1px;
+}
+.m-1{
+    margin-top: -10px;
+}
+.spnr{
+    padding: 10px 0;
+}
+.reg-submit{
+    background-color: #0dff62e3;
+    padding: 15px 35px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 2px 2px 2px black;
+}
+.reg-submit:hover{
+    transform: scale(1.03);
+    transition: .2s ease-in-out;
+}
+.sign-log-link{
+    color: #093418e3;
+    padding-bottom: 70px;
+}
+
+
+
+
+  

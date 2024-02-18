@@ -1,0 +1,51 @@
+.bottom{
+    border-top: 1px solid rgba(255, 255, 255, 0.041);
+    background-color: #121212;
+    height: 70px;
+    border-radius: 5px;
+}
+.bottom-icon:hover{
+    transform: scale(1.08);
+    transition: .1s ease-in-out;
+    transition-duration: 1s;
+}
+.bottom-block{
+    gap: 30px;
+}
+.bottom-song-display{
+    position: absolute;
+    left: 40px !important;
+}
+.bottom-song-image{
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+}
+.bottom-song-content-name{
+    font-size: 16px;
+    font-weight: 500;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    line-height: normal;
+    overflow: hidden;
+    width: 150px;
+}
+.bottom-song-content-singer{
+    padding-top: 5px;
+    font-size: 14px;
+    width: 200px;
+    font-weight: 500;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    line-height: normal;
+    overflow: hidden;
+    color: #b3b3b3;
+}
+
+@media(max-width: 998px){
+    .bottom-song-display{
+        display: none;
+    }
+}

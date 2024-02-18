@@ -1,0 +1,67 @@
+.song-skeleton-grid{
+    display: grid;
+    grid-template-columns: 16px 4fr 2fr 1fr;
+    gap: 16px;
+    border-radius: 5px;
+    padding: 5px 20px;
+    background-color: rgba(255, 255, 255, 0.138);
+}
+.skeleton-song-number{
+    height: 20px;
+    align-self: center;
+    border-radius: 5px;
+}
+.skeleton-song-image{
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+}
+.skeleton-song-album{
+    height: 20px;
+    align-self: center;
+    width: 100px;
+    border-radius: 5px;
+}
+.skeleton-song-duration{
+    height: 20px;
+    align-self: center;
+    width: 50px;
+    border-radius: 5px;
+}
+.skeleton-song-name{
+    height: 15px;
+    width: 150px;
+    border-radius: 5px;
+}
+.skeleton-song-singer{
+    height: 15px;
+    width: 100px;
+    border-radius: 5px;
+}
+
+@media(max-width: 998px){
+    .song-skeleton-grid{
+        grid-template-columns: 4fr 2fr 1fr;
+    }
+    .skeleton-song-number-block{
+        display: none;
+    }
+}
+@media(max-width: 560px){
+    .song-skeleton-grid{
+        grid-template-columns: 4fr 1fr;
+        padding: 5px 10px;
+        transition: .2s padding linear;
+    }
+    .song-skeleton-album-block{
+        display: none;
+    }
+}
+@media(max-width: 421px){
+    .song-skeleton-grid{
+        grid-template-columns: 1fr;
+    }
+    .song-skeleton-duration-block{
+        display: none;
+    }
+}

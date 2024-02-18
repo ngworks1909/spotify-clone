@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-width: 300px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Prompt:wght@100&display=swap');
+*{
+    font-family: Poppins;
+    /* padding: 0; */
+    margin: 0;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+.display-flex{
+  display: flex;
+}
+.align-center{
+  align-items: center;
+}
+.justify-center{
+  justify-content: center;
+}
+.justify-around{
+  justify-content: space-around;
+}
+.justify-between{
+  justify-content: space-between;
+}
+.color-white{
+  color: white;
+}
+.color-black{
+  color: black;
+}
+.bg-transparent{
+  background-color: transparent;
+  border: none;
+}
+li{
+  list-style: none;
+}
+.decoration-none{
+  text-decoration: none;
+}
+
+.gap-10{
+  gap: 10px;
+}
+.gap-1{
+  gap: 1rem;
+}
+.gap-05{
+  gap: 0.5rem;
+}
+.gap-5{
+  gap: 5px;
+}
+.flex-column{
+  flex-direction: column;
+}
+.cursor-pointer{
+  cursor: pointer;
+}
+.gap-2{
+  gap: 1.75rem;
+}
+.justify-end{
+  justify-content: flex-end;
+}
+.bg-red{
+  background-color: red;
+}
+.facebook{
+  background-color: #3b5998;
+}
+.bt{
+  border: 0.15em solid #2221219f;
+  color: #000000b6 ;
+}
+.span-or{
+  padding: 40px 0;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.858);
+}
+.break{
+  position: relative;
+  font-size: 16px;
+  font-weight: 600;
+}
+.span-or::before{
+  content: "";
+  height: 1px;
+  width: 200px;
+  background-color: rgba(0, 0, 0, 0.289);
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  margin-right: 20px;
+}
+.span-or::after{
+  content: "";
+  height: 1px;
+  width: 200px;
+  background-color: rgba(0, 0, 0, 0.289);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: 20px;
+}
+.flex-1{
+  flex: 1;
+}
+
+
+
+

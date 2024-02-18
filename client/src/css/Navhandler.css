@@ -1,0 +1,17 @@
+.nav-handler{
+    height: 25px;
+    width: 25px;
+    color: white;
+    position: absolute;
+    top: 20px;
+    right: -12px;
+}
+.rotate{
+    transform: rotate(180deg);
+}
+
+@media (max-width : 648px){
+    .nav-handler{
+        display: none;
+    }
+}

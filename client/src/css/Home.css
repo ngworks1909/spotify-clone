@@ -1,0 +1,26 @@
+.home, .songbar{
+    height: 100dvh;
+    background-color: black;
+    overflow: hidden;
+}
+.mein{
+    flex: 1;
+}
+.subContainer{
+    gap: 10px;
+}
+.topContainer{
+    height: 60px;
+}
+.subHome{
+    padding: 10px;
+}
+.bottomContainer{
+    height: 65px;
+}
+
+@media(max-width: 998px){
+    .subContainer{
+        gap: 0;
+    }
+}

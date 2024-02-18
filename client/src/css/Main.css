@@ -1,0 +1,25 @@
+.main{
+   flex: 1;
+   overflow: hidden;
+   overflow-y: scroll;
+   scroll-behavior: smooth;
+   height: calc(87dvh -10px);
+   border-radius: 5px;
+}
+.submain{
+   height: calc(87dvh - 60px);
+   top: 60px;
+   overflow: hidden;
+   overflow-y: scroll;
+   scroll-behavior: smooth;
+   background-color: #121212;
+}
+/* @media (max-width : 648px){
+   .main{
+      flex: none;
+   }
+   .submain{
+      flex: none;
+      height: calc(87dvh - 150px) !important;
+   }
+} */
