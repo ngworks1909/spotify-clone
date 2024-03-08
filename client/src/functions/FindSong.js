@@ -1,5 +1,5 @@
 export const FindSong = async({songId, host}) =>{
-    const response = await fetch(`http://${host}:3001/api/playlists/fetchTrack/${songId}`, {
+    const response = await fetch(`https://${host}/api/playlists/fetchTrack/${songId}`, {
               method: "GET",
               headers: {
                   "Content-Type": "application/json",
