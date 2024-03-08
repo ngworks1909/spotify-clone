@@ -20,7 +20,7 @@ export default function Register() {
   },[setUser]);
   const handleRegister = async(user) =>{
     const {email, password, username} = user;
-    const response = await fetch(`http://${host}:3001/api/auth/createUser`, {
+    const response = await fetch(`https://${host}/api/auth/createUser`, {
         method: "POST",
         headers: {
               "Content-Type": "application/json",

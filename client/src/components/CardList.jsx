@@ -1,7 +1,7 @@
-import React, { memo, useEffect, useState } from 'react'
-import Card from '../handlers/Card'
-import '../css/CardList.css'
+import React, { memo, useEffect, useState } from 'react';
 import { useRecoilValue, useSetRecoilState } from 'recoil';
+import '../css/CardList.css';
+import Card from '../handlers/Card';
 import { CardState } from '../states/CardState';
 import { Host } from '../states/Host';
 
@@ -11,7 +11,7 @@ const CardList = memo(function CardList() {
   const setLoading = useSetRecoilState(CardState);
   const host = useRecoilValue(Host);
   const fetchPlay = async() => {
-    const response = await fetch(`http://${host}:3001/api/playlists/fetchPlaylists`, {
+    const response = await fetch(`https://${host}/api/playlists/fetchPlaylists`, {
               method: "GET",
               headers: {
                   "Content-Type": "application/json",

@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { BiLogOut } from 'react-icons/bi';
-import { IoMdArrowDropdown } from "react-icons/io";
-import { Link} from 'react-router-dom';
-import '../css/Top.css';
-import { useRecoilValue, useSetRecoilState } from 'recoil';
-import { Host } from '../states/Host';
 import { HiMenuAlt2 } from "react-icons/hi";
+import { IoMdArrowDropdown } from "react-icons/io";
+import { Link } from 'react-router-dom';
+import { useRecoilValue, useSetRecoilState } from 'recoil';
+import '../css/Top.css';
+import { Host } from '../states/Host';
 import { MobileState } from '../states/MobileState';
 
 export default function Top() {
@@ -15,7 +15,7 @@ export default function Top() {
   const setMobile = useSetRecoilState(MobileState);
   const host = useRecoilValue(Host);
   const fetchUser = async(authToken) => {
-    const response = await fetch(`http://${host}:3001/api/auth/fetchUser`, {
+    const response = await fetch(`https://${host}/api/auth/fetchUser`, {
               method: "POST",
               headers: {
                   "Content-Type": "application/json",

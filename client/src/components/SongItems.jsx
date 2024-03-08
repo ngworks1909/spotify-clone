@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import Song from "./Song";
-import "../css/SongItems.css";
 import { useRecoilValue } from "recoil";
+import SongSkeleton from '../components/SongSkeleton';
+import "../css/SongItems.css";
 import { Host } from "../states/Host";
-import SongSkeleton from '../components/SongSkeleton'
+import Song from "./Song";
 
 export default function SongItems() {
   const host = useRecoilValue(Host);
@@ -14,7 +14,7 @@ export default function SongItems() {
     const data = localStorage.getItem("data");
     const items = data.split(",");
     const id = items[0];
-    fetch(`http://${host}:3001/api/playlists/fetchSongs/${id}`, {
+    fetch(`https://${host}/api/playlists/fetchSongs/${id}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

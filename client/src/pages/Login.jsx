@@ -6,8 +6,8 @@ import { useRecoilValue, useSetRecoilState } from 'recoil';
 import logo from '../assets/sploginlogo.png';
 import '../css/Login.css';
 import Field from '../handlers/Field';
-import { UserState } from '../states/UserState';
 import { Host } from '../states/Host';
+import { UserState } from '../states/UserState';
 
 
 export default function Login() {
@@ -25,7 +25,7 @@ export default function Login() {
 
   const handleLogin = async(user) =>{
     const {email, password} = user;
-    const response = await fetch(`http://${host}:3001/api/auth/login`, {
+    const response = await fetch(`https://${host}/api/auth/login`, {
               method: "POST",
               headers: {
                   "Content-Type": "application/json",
