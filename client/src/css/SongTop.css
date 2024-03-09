@@ -23,10 +23,11 @@
     display: -webkit-box;
     margin-top: -10px;
     font-size: 60px;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
     line-height: normal;
     overflow: hidden;
+    text-overflow: ellipsis;
     width: 100%;
     word-break: break-word;
 }
