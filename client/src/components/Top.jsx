@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { BiLogOut } from 'react-icons/bi';
 import { HiMenuAlt2 } from "react-icons/hi";
-import { IoMdArrowDropdown } from "react-icons/io";
+import { CgProfile } from "react-icons/cg";
 import { Link } from 'react-router-dom';
 import { useRecoilValue, useSetRecoilState } from 'recoil';
 import '../css/Top.css';
@@ -61,23 +61,31 @@ export default function Top() {
        <div className="skeleton skeleton-text"></div>
        </div>}
 
-       
         {!loading && (username === '') &&
          <div className='topWrapper display-flex gap-10 align-center'>
         <Link to="/signup" className='decoration-none font-16 sign-button'>Signup</Link>
         <Link to="/login" className='decoration-none log-button font-16'>Login</Link>
         </div>
         }
-        {!loading && (username !== '') && <div className="top-user display-flex align-center justify-between">
-        <span className='color-white user-name-display'>{username.toLocaleUpperCase()}</span>
-        <div className="menu-icon display-flex align-center">
-        <IoMdArrowDropdown className='color-white cursor-pointer drop-icon' size={25}/>
-        <div className="drop-down display-flex align-center gap-1 cursor-pointer" onClick={logout}>
-           <BiLogOut className='color-white'/>
-           <span className='color-white'>Logout</span>
+        {!loading && (username !== '') && 
+        <div className="menu-list display-flex align-center">
+           <div className='display-flex align-center justify-center menu-icon-button'>
+           <div className="top-user display-flex align-center justify-center cursor-pointer">
+                <span className='user-name-display'>{username[0].toLocaleUpperCase()}</span>
+           </div>
+               <div className="box display-flex flex-column">
+                    <button className='display-flex align-center cursor-pointer gap-1'>
+                        <CgProfile className='hidden-icon'/>
+                        <span>Profile</span>
+                    </button>
+                    <button className='display-flex align-center gap-1 cursor-pointer' onClick={logout}>
+                        <BiLogOut className='hidden-icon'/>
+                        <span>Logout</span>
+                    </button>
+               </div>
+           </div>
         </div>
-        </div>
-        </div>}
+        }
         
     </div>
       
